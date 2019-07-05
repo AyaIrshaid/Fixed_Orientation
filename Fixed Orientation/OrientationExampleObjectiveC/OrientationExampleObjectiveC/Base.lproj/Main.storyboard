@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0GP-pc-Km3">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Portrait" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oam-Sa-POI">
+                                <rect key="frame" x="127.5" y="213" width="159" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="aXz-uG-a6S"/>
+                                    <constraint firstAttribute="width" constant="159" id="rOv-lv-NNs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" red="0.66594622461928932" green="0.090951357055398793" blue="0.042017874171801105" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAi-Cu-1oj">
+                                <rect key="frame" x="97" y="308" width="220" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="K7k-eL-4p4"/>
+                                    <constraint firstAttribute="width" constant="220" id="eDX-wa-wyt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Go to landscape &gt;&gt;"/>
+                                <connections>
+                                    <segue destination="38I-pi-aET" kind="show" id="2v0-1p-3tb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.7465498096446701" green="0.7465498096446701" blue="0.7465498096446701" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oam-Sa-POI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="125" id="P0m-dy-kYe"/>
+                            <constraint firstItem="yAi-Cu-1oj" firstAttribute="top" secondItem="oam-Sa-POI" secondAttribute="bottom" constant="53" id="c23-Th-LVR"/>
+                            <constraint firstItem="yAi-Cu-1oj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lJE-zg-hj6"/>
+                            <constraint firstItem="oam-Sa-POI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ovc-Yb-XV9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Nwk-Nz-ERq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="949" y="92"/>
+        </scene>
+        <!--Nav View Controller-->
+        <scene sceneID="qpa-zj-7vS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0GP-pc-Km3" customClass="NavViewController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7qv-47-Kg1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5iJ-8p-Zkt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ao3-Us-6IN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="90" y="92"/>
+        </scene>
+        <!--Landscape View Controller-->
+        <scene sceneID="Xn8-Ow-oZW">
+            <objects>
+                <viewController id="38I-pi-aET" customClass="LandscapeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UuD-Qw-uvU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Landscape" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAK-cX-iVl">
+                                <rect key="frame" x="124" y="213" width="166" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="7fC-nP-LTh"/>
+                                    <constraint firstAttribute="width" constant="166" id="gTn-S1-dZd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" red="0.015603846988560615" green="0.46252363674847496" blue="0.50348984771573602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.74654980959999995" green="0.74654980959999995" blue="0.74654980959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VAK-cX-iVl" firstAttribute="top" secondItem="sfs-zB-fFd" secondAttribute="top" constant="125" id="XBE-h5-sSs"/>
+                            <constraint firstItem="VAK-cX-iVl" firstAttribute="centerX" secondItem="UuD-Qw-uvU" secondAttribute="centerX" id="zj6-Z5-ii1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sfs-zB-fFd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9YW-Ez-0na"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="otm-D0-VI1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1777" y="92"/>
+        </scene>
+    </scenes>
+</document>
